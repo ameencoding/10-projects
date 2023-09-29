@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  place-items: center;
+  background-color: #ae3ec9;
+}
+
+.container {
+  position: relative;
+  padding: 12px;
+  width: 90%;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 16px;
+}
+
+.note {
+  font-size: 20px;
+  padding: 6px 12px;
+  text-align: center;
+  width: 100%;
+
+  position: absolute;
+  top: -8%;
+  left: 0;
+}
+
+.card {
+  text-shadow: 6px 4px 6px #000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 10rem;
+}
+
+.card__1 {
+  color: dodgerblue;
+}
+
+.card__2 {
+  color: darkcyan;
+}
+
+.card__3 {
+  color: lawngreen;
+}
+
+.scale {
+  animation: 1.2s scl infinite;
+}
+.opacity {
+  animation: 1.2s opa infinite;
+}
+.rotate {
+  animation: 1.2s rtt infinite;
+}
+
+@keyframes scl {
+  0% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes opa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+
+@keyframes rtt {
+  0% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
